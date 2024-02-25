@@ -133,14 +133,14 @@ input:focus-visible {
     margin-bottom: 0;
 }
 
-#passwordErrorText {
+.passwordErrorText {
     margin: 0;
     padding: 0;
     font-size: 0.6rem;
     color: #ff3737;
 }
 
-#passwordMatchText {
+.passwordMatchText {
     margin: 0;
     padding: 0;
     font-size: 0.6rem;
