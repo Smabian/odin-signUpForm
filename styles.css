@@ -16,9 +16,11 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 
     max-width: 800px;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0;
 }
@@ -27,7 +29,7 @@ body {
 
 .left {
     flex-basis: 33%;
-
+    min-width: auto;
     background-image: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,10 +66,12 @@ body {
 }
 
 .intro {
-    margin-top: 10%;
+    margin-top: 5%;
     font-weight: 600;
     padding: 10px 25px;
 }
+
+/* Middle Form Section */
 
 .formSection {
     background-color: white;
@@ -75,6 +79,46 @@ body {
     font-weight: bold;
     padding: 0 25px 25px 25px;
 }
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+form > div {
+    flex-basis: 50%;
+}
+
+
+label {
+    color:#404040;
+    font-weight: 700;
+    font-size: 0.5em;
+    letter-spacing: 0.1rem;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 5px;
+    width: 85%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border: 1px solid #377aff;
+    outline-color: 0;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+input:focus-visible {
+    outline: 0;
+}
+
+/* Bottom right section */
 
 .submitLogin {
     padding: 25px;
@@ -107,4 +151,16 @@ a {
     color: #596D48;
     font-weight: bold;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 630px) {
+    .left {
+        flex-basis: 67%;
+        padding: 0;
+    }
+
+    .company{
+        margin: 0;
+    }
+
 }
