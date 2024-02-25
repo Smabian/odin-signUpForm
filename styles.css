@@ -48,6 +48,7 @@ body {
 
 #logo {
     height: 10vh;
+    padding-right: 5px;
 }
 
 /* RIGHT Section with Form */ 
@@ -59,19 +60,51 @@ body {
     flex-direction: column;
     justify-content: flex-start;
 
-    font-family: sans-serif;
-}
-
-.right > div {
-    padding: 25px;
+    font-family: Helvetica, sans-serif;
 }
 
 .intro {
     margin-top: 10%;
-    font-size: 1;
-    font-weight: bold;
+    font-weight: 600;
+    padding: 10px 25px;
 }
 
 .formSection {
     background-color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    padding: 0 25px 25px 25px;
+}
+
+.submitLogin {
+    padding: 25px;
+}
+
+.submitLogin > p {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #596D48;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #7DA25D;
+}
+
+button:active {
+    background-color: #404040;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
 }
