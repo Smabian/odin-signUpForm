@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('Norse-Bold/norse-bold-webfont.woff2') format('woff2'),
+         url('Norse-Bold/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* LEFT Section with Company Logo */ 
+
+.left {
+    flex-basis: 30%;
+
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.company{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(25,25,25,0.7);
+    color: white;
+    font-family: norsebold;
+    font-size: 7vh;
+    padding: 10px;
+}
+
+#logo {
+    height: 10vh;
+}
+
+/* RIGHT Section with Form */ 
+.right {
+    padding: 30px;
+    flex-basis: 70%;
+    background-color: white;
+}
